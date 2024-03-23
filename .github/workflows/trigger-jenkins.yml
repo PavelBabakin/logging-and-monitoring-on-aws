@@ -1,0 +1,18 @@
+name: Trigger Jenkins Job
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-jenkins:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Jenkins Pipeline
+        uses: fjogeleit/http-request-action@v1.8.0
+        with:
+          url: 'http://54.93.188.169:8080/job/Simple%20PHP%20App%20Pipeline/build?token=gacicd'
+          method: 'POST'
+          customHeaders: '{"Authorization": "Basic YWRtaW46MTEwZjQ2ZWVjZGY2ZDU1OWM3ZWFmYTc4ZGU3MzlmMmI2OQ=="}'
