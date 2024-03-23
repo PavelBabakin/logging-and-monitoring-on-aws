@@ -1,0 +1,46 @@
+/vendor/
+/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and editor folders
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Log files
+*.log
+
+# Cache directories
+cache/
+tmp/
+
+# Other files and directories to ignore
+composer.lock
+composer.phar
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+
+# Exported databases
+*.sql
+*.sql.gz
+
+# Dependencies
+/composer/vendor/
+/node_modules/
+
+# Compiled Source
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Testing
+.phpunit.result.cache
+
+*.pem
