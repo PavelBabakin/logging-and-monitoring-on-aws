@@ -9,7 +9,7 @@ pipeline {
         DEPLOY_SERVER_CREDENTIALS_ID = 'simple-php-app-deploy-key'
         // EC2 Instance user and IP. Adjust as necessary
         DEPLOY_SERVER_USER = 'ubuntu'
-        DEPLOY_SERVER_IP = '54.93.188.169'
+        DEPLOY_SERVER_IP = '3.76.105.81'
     }
     stages {
         stage('Checkout') {
