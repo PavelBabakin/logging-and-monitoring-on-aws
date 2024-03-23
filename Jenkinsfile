@@ -11,7 +11,7 @@ pipeline {
                 sshagent(credentials: ['deploy-ssh']) {
                     sh "mkdir -p ~/.ssh"
                     sh "ssh-keyscan 54.93.188.169 >> ~/.ssh/known_hosts"
-                    sh "scp -r * ec2-user@54.93.188.169:/var/www/html"
+                    sh "scp -r * ubuntu@54.93.188.169:/var/www/html"
                 }
             }
         }
