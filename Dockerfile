@@ -14,7 +14,7 @@ RUN apt-get update && \
     echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Configure Apache to use your entry file as DirectoryIndex (adjust filename as necessary)
-RUN echo "DirectoryIndex main.php" > /etc/apache2/conf-available/directory-index.conf && a2enconf directory-index
+RUN echo "DirectoryIndex index.php" > /etc/apache2/conf-available/directory-index.conf && a2enconf directory-index
 
 # Expose the port Apache listens on
 EXPOSE 80
